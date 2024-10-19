@@ -6,30 +6,6 @@
 
 ## Features
 
-### GPIO and Peripheral Features
-
-- **16 Multifunctional GPIO pins** for general-purpose use.
-- **Up to 13** 12-bit ADC channels for analog input.
-- **Up to 2** DAC channels for digital-to-analog conversion.
-- **Up to 16** PWM outputs for motor control or LED dimming.
-- **Up to 8** capacitive touch pins for touch-sensitive applications.
-- **Up to 3 SPI busses** (1 SPI bus pre-configured for the Arduino IDE).
-- **I2S Audio Output** available for digital audio communication.
-- **Up to 2 I2C busses** (1 I2C bus pre-configured for the Arduino IDE).
-- **Up to 3 UARTs** (2 UARTs pre-configured for Arduino IDE; 1 used for bootloading/debugging).
-
-### LED Indicators
-
-- **PWR**: Red power LED.
-- **CHG**: Yellow battery charging indicator.
-- **STAT**: Blue status LED.
-- **WS2812**: RGB LED for custom visual feedback.
-
-### Buttons
-
-- **BOOT**: Boot button.
-- **RST**: Reset button.
-
 ### ESP32-WROOM General Features
 
 - **Operating Voltage**: 2.3V to 3.6V.
@@ -55,6 +31,30 @@
   - **Ambient light sensing** for adjusting brightness in displays and devices.
   - Integrated IR emitter for proximity sensing.
 
+### GPIO and Peripheral Features
+
+- **16 Multifunctional GPIO pins** for general-purpose use.
+- **Up to 13** 12-bit ADC channels for analog input.
+- **Up to 2** DAC channels for digital-to-analog conversion.
+- **Up to 16** PWM outputs for motor control or LED dimming.
+- **Up to 8** capacitive touch pins for touch-sensitive applications.
+- **Up to 3 SPI busses** (1 SPI bus pre-configured for the Arduino IDE).
+- **I2S Audio Output** available for digital audio communication.
+- **Up to 2 I2C busses** (1 I2C bus pre-configured for the Arduino IDE).
+- **Up to 3 UARTs** (2 UARTs pre-configured for Arduino IDE; 1 used for bootloading/debugging).
+
+### LED Indicators
+
+- **PWR**: Red power LED.
+- **CHG**: Yellow battery charging indicator.
+- **STAT**: Blue status LED.
+- **WS2812**: RGB LED for custom visual feedback.
+
+### Buttons
+
+- **BOOT**: Boot button.
+- **RST**: Reset button.
+
 ## Schematic & PCB Design
 
 The board is designed using **KiCad 8.99**, and all design files are included in the repository:
@@ -68,7 +68,7 @@ The board is designed using **KiCad 8.99**, and all design files are included in
 
 Before using the OtterBoard-V2, ensure you have the following:
 
-- **Power Supply**: 2.3V to 3.6V.
+- **Power Supply**: 3.3V to 5V.
 - **Programming Software**: Arduino IDE or PlatformIO (with ESP32 support).
 - **Additional Hardware**: USB-to-UART module for flashing, if necessary.
 
